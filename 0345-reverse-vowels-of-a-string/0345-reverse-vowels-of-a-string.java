@@ -14,19 +14,20 @@ class Solution {
                 continue;
             }
 
-            if("aeiouAEIOU".indexOf(ch[start])!=-1){
-                if("aeiouAEIOU".indexOf(ch[end])!=-1){
+            //if("aeiouAEIOU".indexOf(ch[start])!=-1){
+               // if("aeiouAEIOU".indexOf(ch[end])!=-1){
                     char temp=ch[start];
                     ch[start]=ch[end];
                     ch[end]=temp;
+                    start++;
+                    end--;
                 }
             
                 
             
-            }
-            start++;
-            end--;
-        }
+            
+           
+        
         return new String(ch);
         
     }
