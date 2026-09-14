@@ -14,11 +14,12 @@ class Solution {
                   break;
         
                 }
-                 else if(j==prices.length-1){
+                else if(j==prices.length-1){
                     res[k]=prices[i];
                     k++;
                     break;
                  }   
+                 
                 
             }
             
