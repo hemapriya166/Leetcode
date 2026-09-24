@@ -16,9 +16,10 @@ class Solution {
         ListNode current=dummy;
         int sum=0;
         int carry=0;
+    
         while(temp1!=null||temp2!=null||carry!=0){
-            if(temp1==null && temp2==null){
-              sum=carry;
+            if(temp1==null&&temp2==null){
+                sum=carry;
             }
         
            else if(temp1==null){
