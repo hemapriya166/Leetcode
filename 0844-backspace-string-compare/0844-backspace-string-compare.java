@@ -27,10 +27,8 @@ class Solution {
                 s2+=ch1;
             }
         }
-        if(s1.equals(s2)){
-            return true;
-        }
-        return false;
+        
+        return s1.equals(s2);
         
     }
 }
