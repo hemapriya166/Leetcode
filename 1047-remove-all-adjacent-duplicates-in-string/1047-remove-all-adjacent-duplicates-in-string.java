@@ -9,14 +9,13 @@ class Solution {
               }
 
             else {
-                if(!stack.isEmpty()){
                   if(ch==stack.peek()){
                     stack.pop();
                   }
                   else{
                     stack.push(ch);
                   }
-                }
+                
             }
         }
         for(int i=0;i<stack.size();i++){
