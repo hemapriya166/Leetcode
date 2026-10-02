@@ -40,9 +40,7 @@ class Solution {
         if(s1.equals(s2)){
             return true;
         }
-        else if(s1.equals("")&&s2.equals("")){
-            return true;
-        }
+    
         return false;
     }
 }
