@@ -7,16 +7,15 @@ class Solution {
 
                 num=Integer.parseInt(tokens[i]);
             }
+            
             if(stack.isEmpty()){
                 
                 stack.push(num);
             }
-
-            
             else if(tokens[i].equals("+")){
                 if(!stack.isEmpty()){
                 int a=stack.pop();
-                int b=stack.pop();
+                 int b=stack.pop();
                 stack.push(a+b);
                 }
                
@@ -24,22 +23,22 @@ class Solution {
             else if(tokens[i].equals("-")){
                 if(!stack.isEmpty()){
                     int a=stack.pop();
-                    int b=stack.pop();
+                     int b=stack.pop();
                      stack.push(b-a);
                 }
             }
             else if(tokens[i].equals("/")){
                 if(!stack.isEmpty()){
-                   int a=stack.pop();
-                   int b=stack.pop();
+                    int a=stack.pop();
+                    int b=stack.pop();
                     stack.push(b/a);
                 }
             }
             else if(tokens[i].equals("*")){
                 if(!stack.isEmpty()){
-                int a=stack.pop();
-                int b=stack.pop();
-                stack.push(a*b);
+                  int a=stack.pop();
+                  int b=stack.pop();
+                  stack.push(a*b);
                 }
             }
             else{
