@@ -1,0 +1,18 @@
+class Solution {
+    public boolean checkIfPangram(String sentence) {
+       boolean[]res=new boolean[26];
+       
+        for(int i=0;i<sentence.length();i++){
+            char ch=sentence.charAt(i);
+            res[ch-'a']=true;
+        }
+        for(int i=0;i<res.length;i++){
+            if(res[i]==false){
+              return false;  
+            }
+            
+            
+        }
+        return true;
+    }
+}
